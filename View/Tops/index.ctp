@@ -3,7 +3,6 @@
 <?php echo $this->Html->css('tops'); ?>
 <h1><?php echo ($this->element('menu')); ?> </h1>
 
-<p></p>
 <h2>ティーイーシーインターナショナル</h2>
 <h2> トップ 画面だよー <h2>
 
@@ -56,3 +55,5 @@
 <p></p>
 <p><?php //if (AuthComponent::user('role')=='admin') {
          //   echo $this->Html->link('Add Contract Data', array('controller' => 'contracts', 'action' => 'add')); } ?></p>
+
+

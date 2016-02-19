@@ -18,11 +18,11 @@ class UsersController extends AppController {
 
     }
 
-    public function beforeRender() {
-        parent::beforeRender();
+    // public function beforeRender() {
+    //     parent::beforeRender();
 
-        $this->set('log', $this->Auth->login());
-    }
+    //     $this->set('log', $this->Auth->login());
+    // }
 
     public function index() {
         $this->User->recursive = 1;
@@ -94,18 +94,18 @@ class UsersController extends AppController {
 
     	    if ($this->Auth->login()) {
                 $this->Flash->success(__('ログインに成功しました'));
-                return $this->redirect(
-                        array('controller' => 'Tops',
-                             'action' =>'index'));
+                // $this->redirect(
+                        // array('controller' => 'Tops',
+                             // 'action' =>'index'));
     	    } else {
                 // pr($this->request->data);
                 // pr($this->Auth->login());
                 // echo $this->Auth->login();
-    	        $this->Flash->set(__('ユーザ名かパスワードが無効です'));
+    	        $this->Flash->error(__('ユーザ名かパスワードが無効です'));
     	    }
     	}
         // pr($this->Auth->login());
-        $this->set('login', $this->request->data);
+        // $this->set('login', $this->request->data);
 
 	}
 

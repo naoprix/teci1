@@ -28,14 +28,14 @@ class AppController extends Controller {
 		'Flash',
 		'Session',
 		'Auth' => array(
-			// 'loginRedirect' => array(
-			// 	'controller' => 'tops',
-			// 	'action' => 'index'
-			// ),
-			// 'logoutRedirect' => array(
-			// 	'controller' => 'tops',
-			// 	'action' => 'index'
-			// ),
+			'loginRedirect' => array(
+				'controller' => 'staffschedules',
+				'action' => 'index'
+			),
+			'logoutRedirect' => array(
+				'controller' => 'staffschedules',
+				'action' => 'index'
+			),
 			'authenticate' => array(
 				'Form' => array(
 					'passwordHasher' => 'Blowfish'

@@ -6,13 +6,18 @@
 
 <?php
 
-//pr($member);
+pr($member);
 
-$id = $member['Member']['id'];
-$staff_code = $member['Member']['staff_code'];
-$name = $member['Member']['name'];
-$group = $member['Member']['group'];
-$staff_order = $member['Member']['staff_order'];
+// $id = $member['Member']['id'];
+// $staff_code = $member['Member']['staff_code'];
+// $name = $member['Member']['name'];
+// $group = $member['Member']['group'];
+// $staff_order = $member['Member']['staff_order'];
+$id = $member['id'];
+$staff_code = $member['staff_code'];
+$name = $member['name'];
+$group = $member['group'];
+$staff_order = $member['staff_order'];
 
 
 echo $staff_code;
