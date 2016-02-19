@@ -1,0 +1,28 @@
+@charset"UTF-8";
+
+table {
+	table-layout: fixed;
+	border-collapse: collapse;
+	border: none;
+	height: 40px;
+	font-size: xx-small;
+	margin: 0;
+}
+
+.name {
+	width: 80px;
+}
+.destination {
+	width: 80px;
+}
+.date {
+	width: 1px;
+	align: center;
+}
+
+.trip_info {
+	border-collapse: collapse;
+	font-size: x-small;
+	margin: 1;
+	width: 100px;
+}

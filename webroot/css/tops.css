@@ -1,0 +1,23 @@
+@charset"UTF-8";
+
+div {
+	font-family: arial, sans-serif;
+}
+div.heading {
+	padding: 15px 10px 5px 10ps;
+	color: #666666;
+	background-color: #ffcccc;
+	font-weight: bolder;
+	font-size: 12pt;
+}
+
+table.trip {
+	border-collapse: collapse;
+	margin-bottom: 2em;
+}
+
+table, th, td {
+	border: 2px solid #ffffff;
+	width: 400px;
+	font-size: x-small;
+}

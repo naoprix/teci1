@@ -1,0 +1,5 @@
+sftp-config.js
+
+/Config/*
+/tmp/*
+/Vendor/*
